@@ -20,6 +20,7 @@ namespace BurgerShack.Controllers
         [HttpPost("register")]
         public async Task<ActionResult<User>> Register([FromBody] UserRegistration creds)
         {
+            //this is new
             try
             {
                 User u = _accountService.Register(creds);

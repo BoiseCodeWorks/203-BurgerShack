@@ -9,7 +9,8 @@
 </head>
 
 <body>
-
+  <h1>HELLO, WORLD!</h1>
+  <p>of cups???? mark is weird</p>
 
   <form onsubmit="sendPhoto(event)">
     <input type="file" name="img">
@@ -22,7 +23,7 @@
       event.preventDefault();
 
       debugger
-      let res = await fetch("/api/burgers/123/img", {
+      let res = await fetch("/api/burgers/item-2/img", {
         method: 'POST',
         data: JSON.stringify({ file: event.target.img.files[0] })
       })
@@ -33,3 +34,8 @@
 </body>
 
 </html>
+
+
+
+
+
